@@ -1,0 +1,315 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+</head>
+<body class="bg-zinc-900 text-gray-50">
+    <nav class="bg-zinc-800 flex flex-row h-16 justify-between sticky top-0">
+        <div class="flex flex-row mx-6 my-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            <span>
+               <img src="./img/youtube.svg" alt="YT" class="mx-2 my-auto justify-self-center w-9 h-auto">
+            </span>
+            <span class="text-lg font-bold h-auto my-auto">YouTube</span>
+        </div>
+        <div class="flex flex-row h-10 my-auto">
+            <input type="text" name="search" id="Search" placeholder="Search" class="w-[512px] px-4 bg-zinc-900 border-[1px] border-zinc-600">
+            <span class="flex flex-col justify-items-center w-16 h-auto bg-zinc-600 px-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mx-auto my-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+            </span>
+        </div>
+        <div class="flex flex-row mx-6 my-auto">
+            <a href="" class="my-auto"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+              </svg></a>
+            <a href="" class="my-auto"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+              </svg></a>
+            <a href="" class="my-auto"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+              </svg></a>
+              
+              
+            <span><img src="./img/pfp.jpg" alt="pfp" class="w-10 my-auto mx-4 h-auto rounded-full"></span>
+        </div>
+    </nav>
+    <div class="flex flex-row">
+        <div id = "sidebar" class="fixed w-[216px] h-full block">
+            <ul class="mt-1 border-b-[1px] border-b-zinc-600 py-1">
+                <li class="p-2 hover:bg-zinc-700 flex flex-row">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mx-4" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                    </svg>
+                    <span>Home</span>
+                </li>
+                <li class="p-2 hover:bg-zinc-700 flex flex-row">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mx-4" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M12 1.586l-4 4v12.828l4-4V1.586zM3.707 3.293A1 1 0 002 4v10a1 1 0 00.293.707L6 18.414V5.586L3.707 3.293zM17.707 5.293L14 1.586v12.828l2.293 2.293A1 1 0 0018 16V6a1 1 0 00-.293-.707z" clip-rule="evenodd" />
+                    </svg>
+                    <span>Explore</span>
+                </li>
+                <li class="p-2 hover:bg-zinc-700 flex flex-row">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mx-4" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z" />
+                    </svg>
+                    <span>Subscriptions</span>
+                </li>
+            </ul>
+            <ul class="my-1 border-b-[1px] border-b-zinc-600 py-1">
+                <li class="p-2 hover:bg-zinc-700 flex flex-row">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mx-4" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10.496 2.132a1 1 0 00-.992 0l-7 4A1 1 0 003 8v7a1 1 0 100 2h14a1 1 0 100-2V8a1 1 0 00.496-1.868l-7-4zM6 9a1 1 0 00-1 1v3a1 1 0 102 0v-3a1 1 0 00-1-1zm3 1a1 1 0 012 0v3a1 1 0 11-2 0v-3zm5-1a1 1 0 00-1 1v3a1 1 0 102 0v-3a1 1 0 00-1-1z" clip-rule="evenodd" />
+                      </svg>
+                    <span>Library</span>
+                </li>
+                <li class="p-2 hover:bg-zinc-700 flex flex-row">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mx-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+                      </svg>
+                    <span>History</span>
+                </li>
+                <li class="p-2 hover:bg-zinc-700 flex flex-row">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mx-4" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z" />
+                      </svg>
+                    <span>Your Videos</span>
+                </li>
+                <li class="p-2 hover:bg-zinc-700 flex flex-row">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mx-4" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+                      </svg>
+                    <span>Watch Later</span>
+                </li>
+                <li class="p-2 hover:bg-zinc-700 flex flex-row">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mx-4" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z" />
+                      </svg>
+                    <span>Liked Videos</span>
+                </li>
+                </ul>
+            <span class="mx-6 py-2 text-sm font-bold">SUBSCRIPTIONS</span>
+                <ul class="my-1 border-b-[1px] border-b-zinc-600 py-1">
+                    <li class="px-4 my-1 flex flex-row hover:bg-zinc-700">
+                        <img src="./img/icon.jpg" alt="" class="w-8 justify-self-start h-auto rounded-full">
+                        <span class="mx-4">Grian</span>
+                    </li>
+                    <li class="px-4 py-2 flex flex-row hover:bg-zinc-700">
+                        <img src="./img/icon.jpg" alt="" class="w-8 justify-self-start h-auto rounded-full">
+                        <span class="mx-4">Grian</span>
+                    </li>
+                    <li class="px-4 py-2 flex flex-row hover:bg-zinc-700">
+                        <img src="./img/icon.jpg" alt="" class="w-8 justify-self-start h-auto rounded-full">
+                        <span class="mx-4">Grian</span>
+                    </li>
+                    <li class="px-4 py-2 flex flex-row hover:bg-zinc-700">
+                        <img src="./img/icon.jpg" alt="" class="w-8 justify-self-start h-auto rounded-full">
+                        <span class="mx-4">Grian</span>
+                    </li>
+                    <li class="px-4 py-2 flex flex-row hover:bg-zinc-700">
+                        <img src="./img/icon.jpg" alt="" class="w-8 justify-self-start h-auto rounded-full">
+                        <span class="mx-4">Grian</span>
+                    </li>
+                </ul>
+        </div>
+
+
+    <div class="px-6 ml-[216px] w-auto">
+        <div>
+            <!--Carousel-->
+        </div>
+        <div class="grid grid-cols-4 gap-4">
+            <!--Main Videos (GRID)-->
+            <div class=" flex flex-col">
+                <img src="./img/hq720.jpg" class="h-auto p-2" alt="Thumbnail">
+                <div class="flex flex-row p-4 justify-start">
+                    <div class="flex flex-row">
+                        <img src="./img/icon.jpg" class="rounded-full h-10 mr-4" alt="">
+                        <div class="flex flex-col">
+                        <span class="font-bold text-base whitespace-pre-wrap leading-tight">Wholesome ways to Prank Your Friends</span>
+                        <span class="text-sm">Grian</span>
+                        <span class="text-sm">468 views - 13 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" flex flex-col">
+                <img src="./img/hq720.jpg" class="h-auto p-2" alt="Thumbnail">
+                <div class="flex flex-row p-4 justify-start">
+                    <div class="flex flex-row">
+                        <img src="./img/icon.jpg" class="rounded-full h-10 mr-4" alt="">
+                        <div class="flex flex-col">
+                        <span class="font-bold text-lg whitespace-pre-wrap leading-tight">Wholesome ways to Prank Your Friends</span>
+                        <span class="text-sm">Grian</span>
+                        <span class="text-sm">468 views - 13 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <img src="./img/hq720.jpg" class="h-auto p-2" alt="Thumbnail">
+                <div class="flex flex-row p-4 justify-start">
+                    <div class="flex flex-row">
+                        <img src="./img/icon.jpg" class="rounded-full h-10 mr-4" alt="">
+                        <div class="flex flex-col">
+                        <span class="font-bold text-lg whitespace-pre-wrap leading-tight">Wholesome ways to Prank Your Friends</span>
+                        <span class="text-sm">Grian</span>
+                        <span class="text-sm">468 views - 13 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <img src="./img/hq720.jpg" class="h-auto p-2" alt="Thumbnail">
+                <div class="flex flex-row p-4 justify-start">
+                    <div class="flex flex-row">
+                        <img src="./img/icon.jpg" class="rounded-full h-10 mr-4" alt="">
+                        <div class="flex flex-col">
+                        <span class="font-bold text-lg whitespace-pre-wrap leading-tight">Wholesome ways to Prank Your Friends</span>
+                        <span class="text-sm">Grian</span>
+                        <span class="text-sm">468 views - 13 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <img src="./img/hq720.jpg" class="h-auto p-2" alt="Thumbnail">
+                <div class="flex flex-row p-4 justify-start">
+                    <div class="flex flex-row">
+                        <img src="./img/icon.jpg" class="rounded-full h-10 mr-4" alt="">
+                        <div class="flex flex-col">
+                        <span class="font-bold text-lg whitespace-pre-wrap leading-tight">Wholesome ways to Prank Your Friends</span>
+                        <span class="text-sm">Grian</span>
+                        <span class="text-sm">468 views - 13 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <img src="./img/hq720.jpg" class="h-auto p-2" alt="Thumbnail">
+                <div class="flex flex-row p-4 justify-start">
+                    <div class="flex flex-row">
+                        <img src="./img/icon.jpg" class="rounded-full h-10 mr-4" alt="">
+                        <div class="flex flex-col">
+                        <span class="font-bold text-lg whitespace-pre-wrap leading-tight">Wholesome ways to Prank Your Friends</span>
+                        <span class="text-sm">Grian</span>
+                        <span class="text-sm">468 views - 13 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <img src="./img/hq720.jpg" class="h-auto p-2" alt="Thumbnail">
+                <div class="flex flex-row p-4 justify-start">
+                    <div class="flex flex-row">
+                        <img src="./img/icon.jpg" class="rounded-full h-10 mr-4" alt="">
+                        <div class="flex flex-col">
+                        <span class="font-bold text-lg whitespace-pre-wrap leading-tight">Wholesome ways to Prank Your Friends</span>
+                        <span class="text-sm">Grian</span>
+                        <span class="text-sm">468 views - 13 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <img src="./img/hq720.jpg" class="h-auto p-2" alt="Thumbnail">
+                <div class="flex flex-row p-4 justify-start">
+                    <div class="flex flex-row">
+                        <img src="./img/icon.jpg" class="rounded-full h-10 mr-4" alt="">
+                        <div class="flex flex-col">
+                        <span class="font-bold text-lg whitespace-pre-wrap leading-tight">Wholesome ways to Prank Your Friends</span>
+                        <span class="text-sm">Grian</span>
+                        <span class="text-sm">468 views - 13 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <img src="./img/hq720.jpg" class="h-auto p-2" alt="Thumbnail">
+                <div class="flex flex-row p-4 justify-start">
+                    <div class="flex flex-row">
+                        <img src="./img/icon.jpg" class="rounded-full h-10 mr-4" alt="">
+                        <div class="flex flex-col">
+                        <span class="font-bold text-lg whitespace-pre-wrap leading-tight">Wholesome ways to Prank Your Friends</span>
+                        <span class="text-sm">Grian</span>
+                        <span class="text-sm">468 views - 13 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <img src="./img/hq720.jpg" class="h-auto p-2" alt="Thumbnail">
+                <div class="flex flex-row p-4 justify-start">
+                    <div class="flex flex-row">
+                        <img src="./img/icon.jpg" class="rounded-full h-10 mr-4" alt="">
+                        <div class="flex flex-col">
+                        <span class="font-bold text-lg whitespace-pre-wrap leading-tight">Wholesome ways to Prank Your Friends</span>
+                        <span class="text-sm">Grian</span>
+                        <span class="text-sm">468 views - 13 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <img src="./img/hq720.jpg" class="h-auto p-2" alt="Thumbnail">
+                <div class="flex flex-row p-4 justify-start">
+                    <div class="flex flex-row">
+                        <img src="./img/icon.jpg" class="rounded-full h-10 mr-4" alt="">
+                        <div class="flex flex-col">
+                        <span class="font-bold text-lg whitespace-pre-wrap leading-tight">Wholesome ways to Prank Your Friends</span>
+                        <span class="text-sm">Grian</span>
+                        <span class="text-sm">468 views - 13 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <img src="./img/hq720.jpg" class="h-auto p-2" alt="Thumbnail">
+                <div class="flex flex-row p-4 justify-start">
+                    <div class="flex flex-row">
+                        <img src="./img/icon.jpg" class="rounded-full h-10 mr-4" alt="">
+                        <div class="flex flex-col">
+                        <span class="font-bold text-lg whitespace-pre-wrap leading-tight">Wholesome ways to Prank Your Friends</span>
+                        <span class="text-sm">Grian</span>
+                        <span class="text-sm">468 views - 13 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <img src="./img/hq720.jpg" class="h-auto p-2" alt="Thumbnail">
+                <div class="flex flex-row p-4 justify-start">
+                    <div class="flex flex-row">
+                        <img src="./img/icon.jpg" class="rounded-full h-10 mr-4" alt="">
+                        <div class="flex flex-col">
+                        <span class="font-bold text-lg whitespace-pre-wrap leading-tight">Wholesome ways to Prank Your Friends</span>
+                        <span class="text-sm">Grian</span>
+                        <span class="text-sm">468 views - 13 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
